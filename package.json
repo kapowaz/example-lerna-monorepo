@@ -1,0 +1,20 @@
+{
+  "name": "test-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=18",
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.22.10"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "version:check": "lerna version --no-private --conventional-commits --no-git-tag-version --no-push --yes"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "7.3.0"
+  }
+}
